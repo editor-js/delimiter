@@ -71,7 +71,7 @@ class Delimiter {
   /**
    * Extract Tool's data from the view
    * @param {HTMLDivElement} toolsContent - Paragraph tools rendered view
-   * @returns {ParagraphData} - saved data
+   * @returns {DelimiterData} - saved data
    * @public
    */
   save(toolsContent) {
@@ -83,7 +83,7 @@ class Delimiter {
    * @return {string}
    */
   static get toolboxIcon() {
-    return '<svg width="15" height="3" viewBox="0 0 15 3" xmlns="http://www.w3.org/2000/svg"><path d="M1.25 0h3.5a1.25 1.25 0 1 1 0 2.5h-3.5a1.25 1.25 0 1 1 0-2.5zm8.2 0h3.5a1.25 1.25 0 0 1 0 2.5h-3.5a1.25 1.25 0 1 1 0-2.5z"/></svg>';
+    return `<svg width="19" height="4" viewBox="0 0 19 4" xmlns="http://www.w3.org/2000/svg"><path d="M1.25 0H7a1.25 1.25 0 1 1 0 2.5H1.25a1.25 1.25 0 1 1 0-2.5zM11 0h5.75a1.25 1.25 0 0 1 0 2.5H11A1.25 1.25 0 0 1 11 0z"/></svg>`
   }
 
   /**
