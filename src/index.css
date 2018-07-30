@@ -1,0 +1,11 @@
+.ce-delimiter {
+    line-height: 1.6em;
+    width: 100%;
+    text-align: center;
+}
+
+.ce-delimiter:before {
+    content: "***";
+    font-size: 28px;
+    letter-spacing: 12px;
+}
