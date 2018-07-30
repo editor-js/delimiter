@@ -2,7 +2,7 @@
 
 # Delimiter Tool for CodeX Editor
 
-Basic text Tool for the [CodeX Editor](https://ifmo.su/editor).
+Delimiter Tool for the [CodeX Editor](https://ifmo.su/editor).
 
 ## Installation
 
