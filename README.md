@@ -17,7 +17,7 @@ npm i --save-dev codex.editor.delimiter
 Include module at your application
 
 ```javascript
-const Paragraph = require('codex.editor.delimiter');
+const Delimiter = require('codex.editor.delimiter');
 ```
 
 ### Download to your project's source dir
@@ -49,9 +49,7 @@ var editor = CodexEditor({
   
   tools: {
     ...
-    delimiter: {
-      class: Delimiter,
-    },
+    delimiter: Delimiter,
   }
   
   ...
@@ -64,7 +62,7 @@ This Tool has no config params
 
 ## Output data
 
-This Tool has no output data
+This Tool returns empty object.
 
 ```json
 {
