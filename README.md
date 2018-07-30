@@ -4,6 +4,8 @@
 
 Delimiter Tool for the [CodeX Editor](https://ifmo.su/editor).
 
+![](https://capella.pics/de70e7f8-56cd-4779-848f-52c3f68deb47.jpg)
+
 ## Installation
 
 ### Install via NPM
