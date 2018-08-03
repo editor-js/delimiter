@@ -36,11 +36,13 @@ class Delimiter {
 
   /**
    * Render plugin`s main Element and fill it with saved data
-   * @param {DelimiterData} savedData — previously saved data
-   * @param {object} config - user config for Tool
-   * @param {object} api - CodeX Editor API
+   *
+   * @param {{data: DelimiterData, config: object, api: object}}
+   *   data — previously saved data
+   *   config - user config for Tool
+   *   api - CodeX Editor API
    */
-  constructor(savedData, config, api) {
+  constructor({data, config, api}) {
     this.api = api;
 
     this._CSS = {
@@ -51,7 +53,7 @@ class Delimiter {
     this._data = {};
     this._element = this.drawView();
 
-    this.data = savedData;
+    this.data = data;
   }
 
   /**
