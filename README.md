@@ -29,13 +29,11 @@ const Delimiter = require('codex.editor.delimiter');
 
 ### Load from CDN
 
-Get newest bundle path from [RawGit](https://rawgit.com) — open site and paste link to JS bundle in repository.
+You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/codex.editor.delimiter).
 
-`https://github.com/codex-editor/delimiter/blob/master/dist/bundle.js`
+`https://cdn.jsdelivr.net/npm/codex.editor.delimiter@1.0.1`
 
-> Note: use `production` link with commit hash to avoid issues with caching.
-
-Then require this script on page with CodeX Editor.
+Require this script on a page with CodeX Editor.
 
 ```html
 <script src="..."></script>
