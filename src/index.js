@@ -18,15 +18,6 @@ require('./index.css').toString();
  */
 class Delimiter {
   /**
-   * Should this tool be displayed at the Editor's Toolbox
-   * @returns {boolean}
-   * @public
-   */
-  static get displayInToolbox() {
-    return true;
-  }
-
-  /**
    * Allow Tool to have no content
    * @return {boolean}
    */
@@ -89,11 +80,17 @@ class Delimiter {
   }
 
   /**
-   * Get Tool icon's SVG
-   * @return {string}
+   * Get Tool toolbox settings
+   * icon - Tool icon's SVG
+   * title - title to show in toolbox
+   *
+   * @return {{icon: string, title: string}}
    */
-  static get toolboxIcon() {
-    return `<svg width="19" height="4" viewBox="0 0 19 4" xmlns="http://www.w3.org/2000/svg"><path d="M1.25 0H7a1.25 1.25 0 1 1 0 2.5H1.25a1.25 1.25 0 1 1 0-2.5zM11 0h5.75a1.25 1.25 0 0 1 0 2.5H11A1.25 1.25 0 0 1 11 0z"/></svg>`
+  static get toolbox() {
+    return {
+      icon: `<svg width="19" height="4" viewBox="0 0 19 4" xmlns="http://www.w3.org/2000/svg"><path d="M1.25 0H7a1.25 1.25 0 1 1 0 2.5H1.25a1.25 1.25 0 1 1 0-2.5zM11 0h5.75a1.25 1.25 0 0 1 0 2.5H11A1.25 1.25 0 0 1 11 0z"/></svg>`,
+      title: 'Delimiter'
+    };
   }
 }
 
