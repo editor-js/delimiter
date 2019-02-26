@@ -1,14 +1,16 @@
 {
-  "name": "codex.editor.delimiter",
+  "name": "@editorjs/delimiter",
   "version": "1.0.2",
   "keywords": [
     "codex editor",
     "delimiter",
-    "tool"
+    "tool",
+    "editor.js",
+    "editorjs"
   ],
-  "description": "Delimiter Tool for CodeX.Editor",
+  "description": "Delimiter Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/codex-editor/delimiter",
+  "repository": "https://github.com/editorjs/delimiter",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js --mode production --watch"
