@@ -10,7 +10,7 @@
   ],
   "description": "Delimiter Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/editorjs/delimiter",
+  "repository": "https://github.com/editor-js/delimiter",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",
