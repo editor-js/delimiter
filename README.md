@@ -1,8 +1,8 @@
-![](https://badgen.net/badge/CodeX%20Editor/v2.0/blue)
+![](https://badgen.net/badge/Editor.js/v2.0/blue)
 
-# Delimiter Tool for CodeX Editor
+# Delimiter Tool for Editor.js
 
-Delimiter Tool for the [CodeX Editor](https://ifmo.su/editor).
+Delimiter Tool for the [Editor.js](https://editorjs.io).
 
 ![](https://capella.pics/de70e7f8-56cd-4779-848f-52c3f68deb47.jpg)
 
@@ -13,13 +13,13 @@ Delimiter Tool for the [CodeX Editor](https://ifmo.su/editor).
 Get the package
 
 ```shell
-npm i --save-dev codex.editor.delimiter
+npm i --save-dev @editorjs/delimiter
 ```
 
 Include module at your application
 
 ```javascript
-const Delimiter = require('codex.editor.delimiter');
+const Delimiter = require('@editorjs/delimiter');
 ```
 
 ### Download to your project's source dir
@@ -29,11 +29,11 @@ const Delimiter = require('codex.editor.delimiter');
 
 ### Load from CDN
 
-You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/codex.editor.delimiter).
+You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/delimiter).
 
-`https://cdn.jsdelivr.net/npm/codex.editor.delimiter@1.0.1`
+`https://cdn.jsdelivr.net/npm/@editorjs/delimiter@1.0.1`
 
-Require this script on a page with CodeX Editor.
+Require this script on a page with Editor.js.
 
 ```html
 <script src="..."></script>
@@ -41,10 +41,10 @@ Require this script on a page with CodeX Editor.
 
 ## Usage
 
-Add a new Tool to the `tools` property of the CodeX Editor initial config.
+Add a new Tool to the `tools` property of the Editor.js initial config.
 
 ```javascript
-var editor = CodexEditor({
+var editor = EditorJS({
   ...
   
   tools: {

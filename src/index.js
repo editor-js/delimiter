@@ -4,7 +4,7 @@
 require('./index.css').toString();
 
 /**
- * Delimiter Block for the CodeX Editor.
+ * Delimiter Block for the Editor.js.
  *
  * @author CodeX (team@ifmo.su)
  * @copyright CodeX 2018
@@ -31,7 +31,7 @@ class Delimiter {
    * @param {{data: DelimiterData, config: object, api: object}}
    *   data — previously saved data
    *   config - user config for Tool
-   *   api - CodeX Editor API
+   *   api - Editor.js API
    */
   constructor({data, config, api}) {
     this.api = api;
