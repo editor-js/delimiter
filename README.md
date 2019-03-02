@@ -2,7 +2,7 @@
 
 # Delimiter Tool for Editor.js
 
-Delimiter Tool for the [Editor.js](https://ifmo.su/editor).
+Delimiter Tool for the [Editor.js](https://editorjs.io).
 
 ![](https://capella.pics/de70e7f8-56cd-4779-848f-52c3f68deb47.jpg)
 
