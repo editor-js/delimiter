@@ -1,10 +1,10 @@
-![](https://badgen.net/badge/Editor.js/v2.0/blue)
+![](https://badgen.net/badge/@Editojs-Delimiter/v1.1.1/blue)   [![](https://data.jsdelivr.com/v1/package/npm/@itech-indrustries/delimiter/badge)](https://www.jsdelivr.com/package/npm/@itech-indrustries/delimiter)
 
 # Delimiter Tool for Editor.js
 
 Delimiter Tool for the [Editor.js](https://editorjs.io).
 
-![](https://capella.pics/de70e7f8-56cd-4779-848f-52c3f68deb47.jpg)
+![Screenshot from 2020-08-07 04-40-19](https://user-images.githubusercontent.com/55910733/89591561-1f353300-d868-11ea-951b-60f27dda08ae.png)
 
 ## Installation
 
@@ -13,13 +13,13 @@ Delimiter Tool for the [Editor.js](https://editorjs.io).
 Get the package
 
 ```shell
-npm i --save-dev @editorjs/delimiter
+npm i @itech-indrustries/delimiter
 ```
 
 Include module at your application
 
 ```javascript
-const Delimiter = require('@editorjs/delimiter');
+const Delimiter = require('@itech-indrustries/delimiter');
 ```
 
 ### Download to your project's source dir
@@ -29,14 +29,14 @@ const Delimiter = require('@editorjs/delimiter');
 
 ### Load from CDN
 
-You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/delimiter).
+You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@itech-indrustries/delimiter).
 
-`https://cdn.jsdelivr.net/npm/@editorjs/delimiter@1.0.1`
+`https://cdn.jsdelivr.net/npm/@itech-indrustries/delimiter@1.1.1`
 
 Require this script on a page with Editor.js.
 
 ```html
-<script src="..."></script>
+<script src="https://cdn.jsdelivr.net/npm/@itech-indrustries/delimiter@latest"></script>
 ```
 
 ## Usage

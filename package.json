@@ -1,6 +1,6 @@
 {
   "name": "@itech-indrustries/delimiter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "codex editor",
     "delimiter",
@@ -20,7 +20,6 @@
     "name": "CodeX Team",
     "email": "team@ifmo.su"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
