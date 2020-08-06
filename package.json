@@ -1,5 +1,5 @@
 {
-  "name": "@editorjs/delimiter",
+  "name": "@itech-indrustries/delimiter",
   "version": "1.1.0",
   "keywords": [
     "codex editor",
@@ -10,7 +10,7 @@
   ],
   "description": "Delimiter Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/editor-js/delimiter",
+  "repository": "https://github.com/itech-indrustries/delimiter",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -20,6 +20,7 @@
     "name": "CodeX Team",
     "email": "team@ifmo.su"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
