@@ -17,6 +17,15 @@ require('./index.css').toString();
  * @description Tool's input and output data format
  */
 class Delimiter {
+
+  /**
+   * Notify core that read-only mode is supported
+   * @return {boolean}
+   */
+  static get isReadOnlySupported() {
+    return true;
+  }
+
   /**
    * Allow Tool to have no content
    * @return {boolean}
