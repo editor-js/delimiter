@@ -28,6 +28,7 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js',
     library: 'Delimiter',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    libraryExport: 'default'
   }
 };

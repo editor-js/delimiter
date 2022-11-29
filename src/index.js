@@ -1,7 +1,9 @@
 /**
  * Build styles
  */
-require('./index.css').toString();
+import './index.css';
+
+import { IconDelimiter } from '@codexteam/icons'
 
 /**
  * Delimiter Block for the Editor.js.
@@ -16,7 +18,7 @@ require('./index.css').toString();
  * @typedef {Object} DelimiterData
  * @description Tool's input and output data format
  */
-class Delimiter {
+export default class Delimiter {
 
   /**
    * Notify core that read-only mode is supported
@@ -97,10 +99,9 @@ class Delimiter {
    */
   static get toolbox() {
     return {
-      icon: `<svg width="19" height="4" viewBox="0 0 19 4" xmlns="http://www.w3.org/2000/svg"><path d="M1.25 0H7a1.25 1.25 0 1 1 0 2.5H1.25a1.25 1.25 0 1 1 0-2.5zM11 0h5.75a1.25 1.25 0 0 1 0 2.5H11A1.25 1.25 0 0 1 11 0z"/></svg>`,
+      icon: IconDelimiter,
       title: 'Delimiter'
     };
   }
 }
 
-module.exports = Delimiter;
