@@ -4,7 +4,7 @@
 
 Delimiter Tool for the [Editor.js](https://editorjs.io).
 
-![](https://capella.pics/de70e7f8-56cd-4779-848f-52c3f68deb47.jpg)
+![](assets/68747470733a2f2f636170656c6c612e706963732f64653730653766382d353663642d343737392d383438662d3532633366363864656234372e6a7067.jpeg)
 
 ## Installation
 
@@ -46,12 +46,12 @@ Add a new Tool to the `tools` property of the Editor.js initial config.
 ```javascript
 var editor = EditorJS({
   ...
-  
+
   tools: {
     ...
     delimiter: Delimiter,
   }
-  
+
   ...
 });
 ```
