@@ -8,8 +8,6 @@ Delimiter Tool for the [Editor.js](https://editorjs.io).
 
 ## Installation
 
-### Install via NPM
-
 Get the package
 
 ```shell
