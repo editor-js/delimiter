@@ -12,7 +12,7 @@ Delimiter Tool for the [Editor.js](https://editorjs.io).
 
 Get the package
 
-```
+```shell
 yarn add @editorjs/delimiter
 ```
 
