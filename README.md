@@ -12,26 +12,21 @@ Delimiter Tool for the [Editor.js](https://editorjs.io).
 
 Get the package
 
-```shell
-npm i --save-dev @editorjs/delimiter
+```
+yarn add @editorjs/delimiter
 ```
 
 Include module at your application
 
 ```javascript
-const Delimiter = require('@editorjs/delimiter');
+import Delimiter from '@editorjs/delimiter';
 ```
-
-### Download to your project's source dir
-
-1. Upload folder `dist` from repository
-2. Add `dist/bundle.js` file to your page.
 
 ### Load from CDN
 
 You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/delimiter).
 
-`https://cdn.jsdelivr.net/npm/@editorjs/delimiter@1.0.1`
+`https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest`
 
 Require this script on a page with Editor.js.
 
