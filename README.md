@@ -20,17 +20,7 @@ Include module at your application
 import Delimiter from '@editorjs/delimiter';
 ```
 
-### Load from CDN
-
-You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/delimiter).
-
-`https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest`
-
-Require this script on a page with Editor.js.
-
-```html
-<script src="..."></script>
-```
+Optionally, you can load this tool from CDN [JsDelivr CDN](https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest)
 
 ## Usage
 
