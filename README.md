@@ -20,6 +20,10 @@ Include module at your application
 
 ```javascript
 const Delimiter = require('@editorjs/delimiter');
+
+// OR
+
+import Delimiter from "@editorjs/delimiter";
 ```
 
 ### Download to your project's source dir
