@@ -103,5 +103,23 @@ export default class Delimiter {
       title: 'Delimiter'
     };
   }
+  
+  /**
+   * Delimiter onPaste configuration
+   *
+   * @public
+   */
+  static get pasteConfig() {
+    return { tags: ['HR'] };
+  }
+
+  /**
+   * On paste callback that is fired from Editor
+   *
+   * @param {PasteEvent} event - event with pasted data
+   */
+  onPaste(event) {
+    this.data = {};
+  }
 }
 
