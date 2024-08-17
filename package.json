@@ -1,6 +1,6 @@
 {
   "name": "@editorjs/delimiter",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "keywords": [
     "codex editor",
     "delimiter",
@@ -15,10 +15,12 @@
   ],
   "main": "./dist/delimiter.umd.js",
   "module": "./dist/delimiter.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/delimiter.mjs",
-      "require": "./dist/delimiter.umd.js"
+      "require": "./dist/delimiter.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
@@ -30,10 +32,13 @@
     "email": "team@ifmo.su"
   },
   "devDependencies": {
-    "vite": "^4.5.0",
-    "vite-plugin-css-injected-by-js": "^3.3.0"
+    "vite": "^5.4.1",
+    "vite-plugin-css-injected-by-js": "^3.5.1",
+    "vite-plugin-dts": "^4.0.3",
+    "@editorjs/editorjs": "^2.30.5",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@codexteam/icons": "^0.0.5"
+    "@codexteam/icons": "^0.3.2"
   }
 }

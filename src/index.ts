@@ -2,7 +2,7 @@
  * Build styles
  */
 import './index.css';
-
+import {API, BlockTool, BlockToolConstructorOptions, BlockToolData, ToolboxConfig, PasteConfig, PasteEvent} from "@editorjs/editorjs";
 import { IconDelimiter } from '@codexteam/icons'
 
 /**
@@ -18,13 +18,13 @@ import { IconDelimiter } from '@codexteam/icons'
  * @typedef {Object} DelimiterData
  * @description Tool's input and output data format
  */
-export default class Delimiter {
+export default class Delimiter implements BlockTool {
 
   /**
    * Notify core that read-only mode is supported
    * @return {boolean}
    */
-  static get isReadOnlySupported() {
+  static get isReadOnlySupported(): boolean {
     return true;
   }
 
@@ -32,9 +32,20 @@ export default class Delimiter {
    * Allow Tool to have no content
    * @return {boolean}
    */
-  static get contentless() {
+  static get contentless(): boolean {
     return true;
   }
+
+  private api: API
+
+  private _CSS: {
+    block: string
+    wrapper: string
+  }
+
+  private data: BlockToolData
+
+  private _element: HTMLDivElement
 
   /**
    * Render plugin`s main Element and fill it with saved data
@@ -44,7 +55,7 @@ export default class Delimiter {
    *   config - user config for Tool
    *   api - Editor.js API
    */
-  constructor({data, config, api}) {
+  constructor({data, config, api}: BlockToolConstructorOptions) {
     this.api = api;
 
     this._CSS = {
@@ -52,7 +63,6 @@ export default class Delimiter {
       wrapper: 'ce-delimiter'
     };
 
-    this._data = {};
     this._element = this.drawView();
 
     this.data = data;
@@ -60,11 +70,11 @@ export default class Delimiter {
 
   /**
    * Create Tool's view
-   * @return {HTMLElement}
+   * @return {HTMLDivElement}
    * @private
    */
-  drawView() {
-    let div = document.createElement('DIV');
+  drawView(): HTMLDivElement {
+    let div = document.createElement('div');
 
     div.classList.add(this._CSS.wrapper, this._CSS.block);
 
@@ -76,7 +86,7 @@ export default class Delimiter {
    * @returns {HTMLDivElement}
    * @public
    */
-  render() {
+  render(): HTMLDivElement {
     return this._element;
   }
 
@@ -86,7 +96,7 @@ export default class Delimiter {
    * @returns {DelimiterData} - saved data
    * @public
    */
-  save(toolsContent) {
+  save(toolsContent: HTMLElement): BlockToolData {
     return {};
   }
 
@@ -97,19 +107,19 @@ export default class Delimiter {
    *
    * @return {{icon: string, title: string}}
    */
-  static get toolbox() {
+  static get toolbox(): ToolboxConfig {
     return {
       icon: IconDelimiter,
       title: 'Delimiter'
     };
   }
-  
+
   /**
    * Delimiter onPaste configuration
    *
    * @public
    */
-  static get pasteConfig() {
+  static get pasteConfig(): PasteConfig {
     return { tags: ['HR'] };
   }
 
@@ -118,7 +128,7 @@ export default class Delimiter {
    *
    * @param {PasteEvent} event - event with pasted data
    */
-  onPaste(event) {
+  onPaste(event: PasteEvent): void {
     this.data = {};
   }
 }
