@@ -5,6 +5,7 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "dist",
+    "strict": true,
     "moduleResolution": "nodenext"
   }
 }
